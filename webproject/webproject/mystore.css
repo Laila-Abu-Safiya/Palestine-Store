@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family:'Poppins', sans-serif;
+}
+.side {
+    width: 345px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: crimson;
+}
+.side-icon{
+    height: 90px;
+    padding:1rem 0 1rem 2rem;
+    color: white;
+}
+.side-icon span{
+    display: inline-block;
+    padding-right: 1rem;
+}
+.side-menu li{
+    width:100% ;
+    margin-bottom: 1.7rem;
+    padding-left:1rem ;
+}
+.side-menu a{
+    padding-left: 1rem;
+    display: block;
+    color: white;
+    font-size:1.1rem ;
+}
+.side-menu a span:first-child{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+.side-menu a:hover{
+    background: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: crimson;
+    border-radius: 30px 0 0 30px;
+
+}

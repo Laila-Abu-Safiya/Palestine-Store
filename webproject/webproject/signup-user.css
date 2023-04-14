@@ -1,0 +1,244 @@
+body{
+    margin:0;
+    color:#6a6f8c;
+    font:600 16px/18px 'Open Sans',sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+.group .label{
+    user-select: none;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+.logo{
+    width: 500px;
+    cursor: pointer;
+    color: crimson;
+    font-family: Bernard MT Condensed;
+    position: absolute;
+    left: 100px;
+}
+.logo2{
+    width: 70px;
+    cursor: pointer;
+    padding: 0px;
+}
+.logo h1{
+    font-size: 70px;
+    margin-top: 40px;
+    padding: 0px;
+    position: absolute;
+    left: 40%;
+
+}
+.navbar ul{
+    position: absolute;
+    left: 70%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    left: 0px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after {
+
+    width: 100%;
+}
+.group1 input[type="radio"] {
+    display: none;
+}
+
+.group1 input[type="radio"] + label {
+    z-index: 10;
+    margin: 0 10px 10px 0;
+    position: relative;
+    color: grey;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    background-color: #c2cdda;
+    border: 2px solid #ced4da;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.group1 input[type="radio"]:checked + label {
+    color: crimson;
+    background-color: white;
+}
+
+.group1 input[type="radio"] + label {
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+
+.login-wrap{
+    width:100%;
+    margin:auto;
+    top:50px;
+    max-width:525px;
+    min-height:7000px;
+    position:relative;
+    background:url(no-time-concept-illustration_114360-4209.jpg) no-repeat center;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+    width:100%;
+    height:100%;
+    position:absolute;
+    padding:90px 70px 50px 70px;
+    background:rgba(12,2,20,.9);
+}
+.login-html .signup-user,
+.login-html .sign-up-htm,
+.login-html .sign-up-deliv{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+    transform:rotateY(180deg);
+    backface-visibility:hidden;
+    transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-html .sign-up-delivery,
+.login-form .group .check{
+    display:none;
+
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+    text-transform:uppercase;
+}
+.login-html .tab{
+    font-size:13px;
+    margin-right:10px;
+    padding-bottom:5px;
+    margin:0 15px 10px 0;
+    display:inline-block;
+    border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab,
+.login-html .sign-up-delivery:checked + .tab{
+    color:#fff;
+    border-color:crimson;
+}
+.login-form{
+    min-height:345px;
+    position:relative;
+    perspective:1000px;
+    transform-style:preserve-3d;
+}
+.login-form .group{
+    margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+    width:100%;
+    color:#fff;
+    display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+    border:none;
+    padding:15px 20px;
+    border-radius:25px;
+    background:rgba(255,255,255,.1);
+}
+.login-form .group .label{
+    color:#aaa;
+    font-size:12px;
+}
+.login-form .group .button{
+    background:crimson;
+}
+.login-form .group label .icon{
+    width:15px;
+    height:15px;
+    border-radius:2px;
+    position:relative;
+    display:inline-block;
+    background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+    content:'';
+    width:10px;
+    height:2px;
+    background:#fff;
+    position:absolute;
+    transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+    left:3px;
+    width:5px;
+    bottom:6px;
+    transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+    top:6px;
+    right:0;
+    transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+    color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+    background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+    transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+    transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .sign-up-delivery + .tab + .login-form .signup-user{
+    transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .sign-up-delivery+ .tab + .login-form .sign-up-htm{
+    transform:rotate(0);
+}
+.login-html .sign-up-delivery:checked + .tab  + .login-form .sign-up-deliv{
+    transform:rotate(0);
+}
+.login-form .group .button:hover{
+    border:crimson 3px solid;
+    background: transparent;
+    color: crimson;
+    font-weight: 400;
+    transition: 0.8s;
+
+}

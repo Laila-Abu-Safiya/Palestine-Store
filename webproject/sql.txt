@@ -1,0 +1,57 @@
+
+****cart table
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL,
+  `Price` int(4) NOT NULL,
+  `Discount` int(4) NOT NULL,
+  `Type` varchar(20) NOT NULL,
+  `Color` varchar(20) NOT NULL,
+  `img` longblob NOT NULL,
+  `id_user` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+________________________________
+**** shopping-list table
+CREATE TABLE `shopping-list` (
+  `id` int(11) NOT NULL,
+  `Price` int(4) NOT NULL,
+  `Discount` int(4) NOT NULL,
+  `Type` varchar(40) NOT NULL,
+  `Color` varchar(20) NOT NULL,
+  `img` blob NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `store_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+________________________________
+****store-merc table
+CREATE TABLE `store-merc` (
+  `id` int(11) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `number` int(5) NOT NULL,
+  `color` text NOT NULL,
+  `price` int(4) NOT NULL,
+  `price_after` int(4) DEFAULT NULL,
+  `img` varchar(200) NOT NULL,
+  `id_user` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+________________________________
+****users-table table
+CREATE TABLE `users-table` (
+  `id_user` int(11) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Password` varchar(20) NOT NULL,
+  `Name` varchar(50) NOT NULL,
+  `Phone-num` varchar(13) NOT NULL,
+  `Address` varchar(100) NOT NULL,
+  `gender` varchar(7) NOT NULL,
+  `level` varchar(7) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+_________________
+CREATE TABLE `delivery` (
+  `id` int(11) NOT NULL,
+  `Store` varchar(20) NOT NULL,
+  `count` int(11) NOT NULL,
+  `Receiver` varchar(20) NOT NULL,
+  `Date` date NOT NULL,
+  `Destination` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+

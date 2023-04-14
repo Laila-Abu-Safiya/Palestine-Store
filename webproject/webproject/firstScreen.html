@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="244045494_4444413118973348_6341370727680401580_n.png">
+    <link rel="stylesheet" href="firstscreenstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Palestine Store</title>
+</head>
+<body onload="slider()">
+<!-- first section-->
+    <div class="first_container">
+
+        <div class="banner">
+            <div class="slider">
+                <img src="shop-01.jpg" id="slide">
+        </div>
+        <div class="over">
+            <div class="navbar" id="home">
+                <img src="244045494_4444413118973348_6341370727680401580_n.png"class="logo2">
+                <h1 class="logo" >Palestine Store</h1>
+                <ul>
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#about">About Us</a> </li>
+                    <li><a href="#serv">Service</a> </li>
+                    <li><a href="#con">Contact</a> </li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Welcome to Palestine Store</h1>
+                <br>
+                <br>
+                <p>Join us to make your life easy, here you can buy or sale anything you want </p>
+                <div>
+                    <button type="button" onclick="location.href='signup-user.html'"><span></span>Sign Up</button>
+                </div>
+            </div>
+            <div class="loginform">
+                <form>
+                    <h2>Sign In</h2>
+                    <div class="inputBox">
+                        <input type="email" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <input  type="password" name="" required="required">
+                        <span >Password</span>
+                    </div>
+                    <div class="inputBox">
+                        <label >Don't have an account, </label>
+                        <a href="signup-user.html">Sgin Up.</a>
+                    </div>
+
+                    <div>
+                        <button type="button" class="onclick" onclick="location.href='go-to-signup.html'"><span></span>Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        <script>
+           var slide=document.getElementById("slide");
+           var images = ["shop-01.jpg",
+           "mobile_version_ownastore.jpg",
+           "581183_81_61636_ioxgCosqp.jpg",
+           "brand-1.jpg",
+           "shop-home-message-wooden-dices-credit-card-small-cart-clear-background-online-shopping-hom-concept-181245381.jpg"];
+           var len = images.length;
+           var i=0;
+           function slider(){
+               if(i > len-1){
+                  i=0;
+               }
+               slide.src=images[i]
+               i++;
+               setTimeout('slider()',3000);
+           }
+        </script>
+    </div>-->
+<header>
+    <nav>
+        <div class="logo">
+        <h1>Palestine Store</h1>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a> </li>
+            <li><a href="#about">About Us</a> </li>
+            <li><a href="#serv">Service</a> </li>
+            <li><a href="#con">Contact</a> </li>
+        </ul>
+        <box-icon name='menu' color="whitesmoke" size="lg" id="menu"></box-icon>
+    </nav>
+    <div class="content">
+            <h1>Welcome to Palestine Store</h1>
+            <br>
+            <br>
+            <p>Join us to make your life easy, here you can buy or sale anything you want </p>
+                <button type="button" onclick="location.href='signup-user.html'"><span></span>Sign Up</button>
+            <form>
+                <h2>Sign In</h2>
+                    <input type="email" name="" required="required">
+                    <span>Email</span>
+                    <input  type="password" name="" required="required">
+                    <span >Password</span>
+                    <label >Don't have an account, </label>
+                    <a href="signup-user.html">Sgin Up.</a>
+                    <button type="button" class="onclick" onclick="location.href='go-to-signup.html'"><span></span>Log In</button>
+            </form>
+        </div>
+</header>
+<div class="about-us" id="about">
+    <div class="first-about">
+        <h1 >About Us</h1>
+        <p class="text-about">
+         What is Palestine Store?<br> Its a website that help in shopping, here you can join us and buy anything you want from your home
+            we will send it to you very fast.<br>
+            Are you a store owner? here you can view your store's merchandise.
+        </p>
+        <button class="arrawup" onclick="location.href='firstScreen.html'"><i class="fa fa-arrow-up" aria-hidden="true" aria-hidden="true"></i><span></span></button>
+        <div class="service1">
+            <span></span>Owner
+            <span></span>buyer
+            <span></span>delivery
+        </div>
+    </div>
+</div>
+<div class="service" id="serv">
+    <h1 >Our Services</h1>
+    <div class="contentbox">
+        <div class="card">
+            <div class="box">
+                <img class="cadimg0" src="download.png">
+                <h3>Buyer<br></h3>
+                <p>The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa. See the trademark owner for rules</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <img class="cadimg1" src="future-group-negotiates-rents-for-its-1700-stores.jpg">
+                <h3>Owner <br></h3>
+                <p>The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa. See the trademark owner for rules</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <img class="cadimg2" src="images.jpg">
+                <h3>Delivery<br></h3>
+                <p>The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa. See the trademark owner for rules</p>
+            </div>
+        </div>
+    </div>
+</div>
+<DIV class="contact" id="con">
+    <div class="content2">
+        <h2 >Contact Us</h2>
+        <p>If you have any questions or inquiries, you can contact us through one of these interfaces</p>
+    </div>
+    <div class="contact-continer">
+    <div class="contact-box">
+        <div class="boxinfo">
+        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div class="contacttext">
+            <h3>Address</h3>
+            <p>contry,num region<br>city,street </p>
+        </div>
+    </div>
+        <div class="boxinfo">
+            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+            <div class="contacttext">
+                <h3>Email</h3>
+                <p>labus1249@gmail.com </p>
+            </div>
+        </div>
+        <div class="boxinfo">
+            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="contacttext">
+                <h3>Phone</h3>
+                <p>+972-568760266</p>
+            </div>
+        </div>
+    </div>
+        <div class="contactform">
+          <form>
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                  <input type="text" name="" required="required">
+                  <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                  <input  type="email" name="" required="required">
+                  <span >Email</span>
+              </div>
+              <div class="inputBox">
+                  <textarea required="required"></textarea>
+                  <span>Type your message here...</span>
+              </div>
+              <div class="inputBox">
+                  <input type="submit" name="" value="Send">
+              </div>
+          </form>
+        </div>
+    </div>
+</DIV>
+</body>
+</html>

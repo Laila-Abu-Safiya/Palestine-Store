@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palestine Store </title>
+    <link rel="stylesheet" href="signup-user.css">
+    <link rel="icon" href="244045494_4444413118973348_6341370727680401580_n.png">
+</head>
+<body>
+<div class="navbar">
+    <img src="244045494_4444413118973348_6341370727680401580_n.png"class="logo2">
+    <h1 class="logo" id="home">Palestine Store</h1>
+    <ul>
+        <li><a href="test.php#main">Home</a> </li>
+        <li><a href="test.php#about">About Us</a> </li>
+        <li><a href="test.php#service">Service</a> </li>
+        <li><a href="test.php#contact">Contact</a> </li>
+    </ul>
+</div>
+<div class="login-wrap">
+    <div class="login-html">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">User Sign Up</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Owner Sign Up</label>
+        <input id="tab-3" type="radio" name="tab" class="sign-up-delivery"><label for="tab-3" class="tab">Delivery Sign Up</label>
+        <div class="login-form">
+            <form action="signup-user.php" method="post">
+            <div class="signup-user">
+                <div class="group">
+                    <label for="user" class="label">Username</label>
+                    <input id="user" type="text" class="input" name="username">
+                </div>
+                <div class="group">
+                    <label for="useremail" class="label">Email</label>
+                    <input id="useremail" type="email" class="input" name="useremail">
+                </div>
+                <div class="group">
+                    <label for="userpass" class="label">Password</label>
+                    <input id="userpass" type="password" class="input" data-type="password" name="userpass">
+                </div>
+                <div class="group">
+                    <label for="userphone" class="label">Phone number</label>
+                    <input id="userphone" type="text" pattern="+970-[0-9]{9}" class="input" name="usernumber">
+                </div>
+                <div class="group">
+                    <label for="useraddres" class="label">Address</label>
+                    <input id="useraddres" type="text" class="input" pattern="[A-Za-z]{15}-[A-Za-z]{15}" name="useraddress">
+                </div>
+                <div class="group1">
+                    <br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    <input type='radio' id='male' checked='checked' name='radio'>
+                    <label for='male'>&nbsp Male &nbsp</label>
+                    <input type='radio' id='female' name='radio'>
+                    <label for='female'>Female</label>
+                    <br>
+                    <br>
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Sign Up">
+                </div>
+            </div></form>
+            <div class="sign-up-htm">
+                <div class="group">
+                    <label for="storename" class="label">Store name</label>
+                    <input id="storename" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="ownerpass" class="label">Password</label>
+                    <input id="ownerpass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <label for="owneremail" class="label">Email Address</label>
+                    <input id="owneremail" type="Email" class="input">
+                </div>
+                <div class="group">
+                    <label for="owernumber" class="label">Phone number</label>
+                    <input id="owernumber" type="text" pattern="+970-[0-9]{9}" class="input">
+                </div>
+                <div class="group">
+                    <label for="owneraddress" class="label">Address</label>
+                    <input id="owneraddress" type="text" class="input" pattern="[A-Za-z]{15}-[A-Za-z]{15}">
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Sign Up">
+                </div>
+            </div>
+            <div class="sign-up-deliv">
+                <div class="group">
+                    <label for="user" class="label">Store name</label>
+                    <input id="user7" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="pass7" class="label">Password</label>
+                    <input id="pass7" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <label for="pass8" class="label">Email Address</label>
+                    <input id="pass8" type="Email" class="input">
+                </div>
+                <div class="group">
+                    <label for="user" class="label">Phone number</label>
+                    <input id="user9" type="text" pattern="+970-[0-9]{9}" class="input">
+                </div>
+                <div class="group">
+                    <label for="user" class="label">Address</label>
+                    <input id="user10" type="text" class="input" pattern="[A-Za-z]{15}-[A-Za-z]{15}5">
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Sign Up">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

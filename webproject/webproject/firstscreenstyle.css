@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*.first_container{
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    z-index: -2;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 62%;
+    cursor: pointer;
+    color: crimson;
+    font-family: Bernard MT Condensed;
+}
+.logo2{
+    width: 70px;
+    cursor: pointer;
+}
+.logo h1{
+    font-size: 70px;
+    margin-top: 50px;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+
+}
+.navbar ul li a{
+ text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: crimson;
+    position: absolute;
+left: 0;
+    bottom: -10px;
+transition: 0.5s;
+}
+.navbar ul li :hover::after {
+
+    width: 100%;
+}
+.banner{
+  width: 100%;
+    height: 100vh;
+    position: relative;overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+#slide{
+    height: 100%;
+    width: 100%;
+}
+.over{
+  width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+}
+.content{
+    width: 50%;
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    left: 45%;
+
+}
+.loginform{
+    position: absolute;
+    left: 6%;
+    bottom: 200px;
+    width: 35%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-position: inherit;
+    height: 350px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.loginform h2{
+    font-size: 30px;
+    color: crimson;
+    font-weight: 700;
+    position: relative;
+    left: 43%;
+    bottom: -10px;
+}
+.loginform .inputBox{
+    position: relative;
+    width: 70%;
+    margin-top: 10px;
+    left: 83px;
+    padding: 0;
+}
+.loginform .inputBox input,
+.loginform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid crimson;
+    outline: none;
+    resize:none ;
+    background-color: transparent;
+}
+.onclick{
+    position: relative;
+    left: 30%;
+    bottom:-10px;
+}
+.onclick span{
+    background: crimson;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.onclick button:hover span{
+    width: 100%;
+
+}
+.onclick button:hover{
+    border: none;
+}
+.loginform .inputBox span{
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: gray;
+    font-weight: 500;
+    position: initial;
+    background: transparent;
+}
+.loginform .inputBox input:focus ~ span,
+.loginform .inputBox input:valid ~ span,
+.loginform .inputBox textarea:focus ~ span,
+.loginform .inputBox textarea:valid ~ span{
+    color: crimson;
+    font-size: 12px;
+    transform: translateY(-20);
+}
+.loginform .inputBox input[type="submit"] {
+    width: 100px;
+    background: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+.inputBox label{
+    color: white;
+
+}
+.inputBox a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+
+}*/
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('shop-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.logo h1 {
+    font-size: 3.2rem;
+    color: #4CAF50;
+    margin: 0;
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav box-icon {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+    transition: .5s ease-in-out;
+}
+
+.content {
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+}
+
+form {
+    margin: 2.4rem 0;
+}
+
+input {
+    font-size: 1.8rem;
+}
+
+input[type=text],
+input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input::placeholder {
+    font-size: 1.3rem;
+    color: #ccc;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid crimson;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: crimson;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+}
+.about-us{
+    background: url("243888546_4165159116916355_4754235103595790010_n.png") no-repeat left ;
+    background-size: 22%;
+    background-color: lightgray;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.first-about{
+    width: 55%;
+    float: right;
+    background-color: crimson;
+    padding: 150px;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.first-about h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+
+    animation-direction: inherit;
+}
+.first-about .arrawup{
+    position: fixed;
+    width:60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    left: 95%;
+    bottom: -20px;
+    border: white;
+    color: #000;
+
+}
+.text-about{
+     font-size: 15px;
+    color: white;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    animation: forabout 2s;
+}
+.service1{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    animation-name: example;
+    animation-duration: 1s;
+
+}
+@keyframes forabout {
+    0%{
+        color: crimson;
+        margin-bottom: -40px;
+
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+
+}
+.service{
+    width: 100%;
+    padding: 100px 0px;
+    margin: auto;
+    background-color: crimson;
+    height: 80vh;
+}
+.service h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+}
+.service h1::after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contentbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: calc(34% - 20px);
+    background-color: white;
+    color: black;
+    padding: 20px 10px;
+    text-align: center;
+    margin: 0 50px;
+    height: 50vh;
+    cursor: pointer;
+    border-radius: 2px;
+    position: relative;
+    z-index: 0;
+    transition: 0.2s all;
+}
+.box i{
+    font-size: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 15px;
+    transition: all 0.3s ease;
+
+}
+.box h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+.box p{
+    margin: 15px 0;
+}
+
+.cadimg2{
+    height: 40%;
+    width: 40%;
+}
+.cadimg0{
+    height: 80%;
+    width: 90%;
+}
+.cadimg1{
+    height: 60%;
+    width: 55%;
+}
+.card:hover{
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0,0,0,.5);
+    transform: scale(1.05);
+}
+.contact{
+    height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(mobile_version_ownastore.jpg) ;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(mobile_version_ownastore.jpg) ;
+    background-size:cover;
+    background-position:bottom;
+   width: 1318px;
+}
+.contact .content2{
+   max-width: 800px;
+    text-align: center;
+    color: white;
+}
+.contact .content2 h2{
+   font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+.contact .content2 p{
+    font-weight: 300;
+    color: white;
+}
+.contact-continer{
+width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px ;
+}
+.contact-continer .contact-box{
+ width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-continer .contact-box .boxinfo{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact-continer .contact-box .boxinfo .icon{
+
+}
+.contact-continer .contact-box .boxinfo .contacttext{
+   display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact-continer .contact-box .boxinfo .contacttext h3{
+    font-weight: 700;
+    color: crimson;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: white;
+    background-position: inherit;
+
+}
+.contactform h2{
+    font-size: 30px;
+    color: red;
+    font-weight: 700;
+
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+   width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid crimson;
+    outline: none;
+    resize:none ;
+}
+.contactform .inputBox span{
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: gray;
+    font-weight: 500;
+    position: initial;
+    background: white;
+}
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span{
+    color: crimson;
+    font-size: 12px;
+    transform: translateY(-20);
+}
+.contactform .inputBox input[type="submit"]{
+    width: 100px;
+    background: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
