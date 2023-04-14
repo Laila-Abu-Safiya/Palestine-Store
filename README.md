@@ -6,8 +6,8 @@ This is a web project,build using:
     -PHP
     -SQL
 
-#created By:
+##created By:
 Laila Abu Safiya, "Mohammmad Kareem" Kukhun.
 
-#About:
-this project have 2 users, first one is the customer who want to buy from our site, and the other is the manger who can add to the shop and accept a delivery employee in their shop.
+##About:
+This project have 2 users, first one is the customer who want to buy from our site, and the other is the manger who can add to the shop and accept a delivery employee in their shop.
